@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/woodbackground"
+    tools:context="net.pantrypartner.pantrypartner.MainActivity">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/font_color"
+        android:fontFamily="sans-serif-black"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/appTitle"
+        android:paddingTop="40dp">
+
+        <ListView
+            android:id="@+id/pantryList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></ListView>
+
+        <Button
+            android:id="@+id/addGroceryButton"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/font_color"
+            android:background="@color/button_color"
+            android:text="+"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
